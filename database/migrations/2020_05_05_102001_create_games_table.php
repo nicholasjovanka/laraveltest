@@ -20,6 +20,7 @@ class CreateGamesTable extends Migration
             $table->string('gameDescription',1000);
             $table->string('gameTrailer')->nullable($value=true);
             $table->json('platform')->nullable($value=true);
+            $table->boolean('onSteam');
             $table->timestamps();
         });
     }
